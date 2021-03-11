@@ -30,7 +30,7 @@ public class Student implements Comparable{ //이름, 학번, 국영수점수, �
     @Override
     public boolean equals(Object obj) {
         Student student;
-        if(obj instanceof Student){
+        if(obj instanceof Student){ //obj를 Student 형으로 형변환이 가능한지를 물어보는 연산자 (객체 instanceof 클래스)
             student = (Student)obj;
             return student.sno == sno; }
         else
